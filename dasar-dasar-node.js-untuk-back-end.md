@@ -59,15 +59,15 @@ Sebelum membuat proyek, buatlah folder baru terlebih dahulu. Folder ini akan dig
 
 **Linux**
 
-![](img/7.png)
+![](.gitbook/assets/7.png)
 
 **MacOS**
 
-![](img/8.png)
+![](.gitbook/assets/8.png)
 
 Selanjutnya, buka folder _nodejs-basic_ menggunakan VSCode. Caranya, pada Visual Studio Code pilih menu _File -&gt; Open Folder -&gt; \[pilih foldernya\]_. Folder pun berhasil terbuka melalui VSCode.
 
-![](img/9.png)
+![](.gitbook/assets/9.png)
 
 Untuk membuat proyek JavaScript, silakan buka Terminal pada VSCode. Pilih menu _Terminal -&gt; New Terminal_, kemudian tuliskan perintah:
 
@@ -81,17 +81,17 @@ Jika Anda yang tidak menggunakan Visual Studio Code, gunakan Terminal/Command Pr
 
 Setelah menuliskan perintah di atas, Anda akan diberikan beberapa pertanyaan untuk mengisi nilai _package name, version, description_. Semua itu merupakan informasi dasar dari aplikasi yang Anda buat.
 
-![](img/10.png)
+![](.gitbook/assets/10.png)
 
 Nilai yang berada di dalam tanda kurung merupakan nilai _default_. Anda dapat menggunakan nilainya dengan langsung menekan tombol _Enter_. Untuk saat ini, cukup berikan semua pertanyaan dengan nilai _default_.
 
 Setelah mengisi seluruh pertanyaan yang diberikan, Anda akan diberitahu untuk melihat hasil akhir yang dibuat pada berkas `package.json`.
 
-![](img/11.png)
+![](.gitbook/assets/11.png)
 
 Jika nilai yang ditampilkan sudah sesuai, langsung saja tekan tombol Enter. Berkas package.json pun telah berhasil dibuat pada proyek kita.
 
-![](img/12.png)
+![](.gitbook/assets/12.png)
 
 _Voila!_ Anda berhasil membuat proyek Node.js.
 
@@ -105,25 +105,25 @@ Node.js memiliki fitur REPL atau **R**ead-**E**val-**P**rint **L**oop. Sesuai na
 
 REPL merupakan fitur bawaan dari Node.js. Anda bisa mengaksesnya menggunakan perintah node pada Terminal.
 
-![](img/13.png)
+![](.gitbook/assets/13.png)
 
 Tanda &gt; pada Terminal menunjukan Anda sudah masuk ke mode Node REPL. Sekarang, Anda bisa menuliskan kode JavaScript dan mengeksekusinya dengan menggunakan _enter_.
 
-![](img/14.png)
+![](.gitbook/assets/14.png)
 
 Lihat gambar di atas. Ketika mengeksekusi console.log\(‘Hello NodeJS REPL’\), selain pesan “Hello NodeJS REPL”, nilai undefined juga tercetak. Hal tersebut karena REPL selalu menampilkan nilai evaluasi pada console. Karena method console.log\(\) tidak mengembalikan nilai, jadi undefined-lah yang tercetak pada console.
 
 Untuk membuktikan hal itu, cobalah Anda tuliskan statement yang mengembalikan nilai. Contoh sederhananya 2+2. Maka nilai 4 akan tercetak pada console.
 
-![](img/15.png)
+![](.gitbook/assets/15.png)
 
 Cukup asik kan fitur REPL? Tapi kok terkesan hanya dapat mengeksekusi kode satu baris saja ya? Bila Anda beranggapan seperti itu, sebenarnya tidak tepat karena di dalam REPL terdapat mode editor yang berfungsi untuk menuliskan kode JavaScript lebih dari satu baris. Untuk menggunakan mode editor, Anda bisa tuliskan perintah .editor.
 
-![](img/16.png)
+![](.gitbook/assets/16.png)
 
 Ketika masuk ke mode editor, Anda bisa secara leluasa menuliskan kode JavaScript lebih dari satu baris menggunakan _enter_. Fungsi untuk mengeksekusi kode digantikan dengan kombinasi tombol _CTRL+D._ Untuk keluar dari mode editor, gunakan kombinasi _CTRL+C_.
 
-![](img/17.png)
+![](.gitbook/assets/17.png)
 
 Nilai variabel yang Anda buat di REPL dapat diakses selama Anda masih berada di dalam REPL. Jika Anda menutup Terminal atau keluar dari REPL menggunakan perintah .exit, variabel yang sudah Anda buat sebelumnya tidak bisa diakses kembali. Itu artinya, REPL hanya menyimpan memory ketika session masih berlangsung.
 
@@ -133,11 +133,11 @@ Fitur REPL sangat berguna ketika Anda hendak melakukan kalkulasi sederhana, bere
 
 Cara lain untuk mengeksekusi kode JavaScript menggunakan Node.js adalah melalui berkas JS. Silakan buat berkas JavaScript pada proyek nodejs-basic. Gunakan VSCode agar lebih mudah yah.
 
-![](img/18.png)
+![](.gitbook/assets/18.png)
 
 Buatlah berkas JavaScript dengan nama “**index.js**”.
 
-![](img/19.png)
+![](.gitbook/assets/19.png)
 
 Di dalam berkas index.js, Anda bisa menuliskan kode JavaScript sesuka Anda. Pastikan kode yang Anda tulis menampilkan nilai di console yah, jadi Anda bisa melihat nilai yang tampak pada console. Jika bingung, silakan tuliskan saja kode berikut.
 
@@ -159,7 +159,7 @@ node index.js
 
 Node.js pun akan mengeksekusi berkas **‘index.js’**. Bila Anda menuliskan kode seperti yang dicontohkan di atas, maka akan muncul teks **‘Hello JavaScript’** pada console.
 
-![](img/20.png)
+![](.gitbook/assets/20.png)
 
 ### Node.js Global Object
 
@@ -175,7 +175,7 @@ Object.getOwnPropertyNames(global);
 
 Coba jalankan pada REPL. Ia akan mengembalikan semua _member_-nya.
 
-![](img/21.png)
+![](.gitbook/assets/21.png)
 
 Banyak sekali yah member dari global objek. Namun dilansir dari website Node.js, sebenarnya mereka hanya menambahkan beberapa objek saja. Objek tersebut dinamakan dengan ‘true globals’. [\[2\]](https://nodejs.org/en/knowledge/getting-started/globals-in-node-js/) Berikut adalah daftarnya:
 
@@ -195,7 +195,7 @@ Ada juga objek yang merupakan ‘pseudo-globals’ atau objek global semu. Objek
 
 Salah satu global objek yang penting untuk diketahui adalah process. Dalam ilmu komputer, process adalah sebuah program yang dijalankan pada satu atau lebih thread \[4\]. Anda bisa melihat proses yang sedang berjalan pada komputer Anda melalui Task Manager \(Windows\), System Monitor \(Ubuntu\), atau Activity Monitor \(macOS\).
 
-![](img/22.png)
+![](.gitbook/assets/22.png)
 
 Pada Node.js, global objek process memiliki fungsi dan properti yang dapat memberikan informasi mengenai proses yang sedang berjalan.
 
@@ -282,7 +282,7 @@ Anda sudah mengenal process object yang ada di Node.js. Agar lebih paham lagi, s
 
 Untuk latihan kali ini, buatlah berkas **index.js** baru di dalam folder baru **process-object** pada proyek nodejs-basic.
 
-![](img/23.png)
+![](.gitbook/assets/23.png)
 
 Kemudian, tuliskan starter code berikut pada **index.js**.
 
@@ -327,7 +327,7 @@ NODE_ENV=development node ./process-object/index.js <Nama Anda>
 
 Ganti  dengan nama depan Anda. Bila TODO berhasil dikerjakan dengan baik, maka console akan menghasilkan output:
 
-![](img/24.png)
+![](.gitbook/assets/24.png)
 
 > **Mengalami kesulitan dalam menyelesaikan latihan?** Cobalah untuk ulas kembali materi yang diberikan atau tanyakan kesulitan yang Anda alami pada [forum diskusi](https://www.dicoding.com/academies/261/discussions). Hindari melihat atau membandingkan [kode solusi pada latihan process object](https://github.com/dicodingacademy/a261-backend-pemula-labs/blob/201-node-js-basic/node-js-basic/process-object/index.js) sebelum Anda mencobanya sendiri.
 
@@ -400,7 +400,7 @@ const coffee = require('../lib/coffee');
 
 Bila Anda menggunakan VSCode, Anda akan terbantu dengan fitur auto import yang disediakan. Melalui fitur tersebut Anda tidak perlu repot-repot menuliskan alamat modul secara manual. Tinggal tulis saja nilai yang Anda ingin impor, VSCode akan menangani penulisan fungsi `require()`.
 
-![](img/1.gif)
+![](.gitbook/assets/1.gif)
 
 Dalam melakukan impor dan ekspor nilai, kita bisa memanfaatkan object literal dan object destructuring agar dapat mengimpor dan mengekspor lebih dari satu nilai pada sebuah modul. Contoh:
 
@@ -459,7 +459,7 @@ Sekarang Anda sudah tahu bagaimana cara menerapkan modularisasi pada JavaScript.
 
 Buat folder baru dengan nama **modularization** pada proyek nodejs-basic dan di dalamnya buat tiga berkas JavaScript baru yakni **Tiger.js**, **Wolf.js**, dan **index.js**.
 
-![](img/25.png)
+![](.gitbook/assets/25.png)
 
 Di dalam masing-masing berkas JavaScript, tuliskan starter code berikut:
 
@@ -510,7 +510,7 @@ node ./modularization/index.js
 
 Maka console akan menghasilkan output seperti ini:
 
-![](img/26.png)
+![](.gitbook/assets/26.png)
 
 Grrrr! Harimau memenangkan pertandingan!
 
@@ -596,7 +596,7 @@ Kini Anda sudah mengenal bagaimana cara memasang module pihak ketiga melalui NPM
 
 Pada latihan kali ini kita akan mencoba memasang module [lodash](https://lodash.com/) melalui NPM. Namun sebelum itu, buat dulu folder baru bernama **node-package-manager** dan berkas index.js di dalamnya.
 
-![](img/27.png)
+![](.gitbook/assets/27.png)
 
 Pada berkas **index.js**, tuliskan starter code berikut:
 
@@ -621,7 +621,7 @@ node ./node-package-manager/index.js
 
 Maka console akan menghasilkan output berikut:
 
-![](img/28.png)
+![](.gitbook/assets/28.png)
 
 > **Mengalami kesulitan dalam menyelesaikan latihan?** Cobalah untuk ulas kembali materi yang diberikan atau tanyakan kesulitan yang Anda alami pada [forum diskusi](https://www.dicoding.com/academies/261/discussions). Hindari melihat atau membandingkan [kode solusi pada latihan Node Package Manager](https://github.com/dicodingacademy/a261-backend-pemula-labs/commit/4734a3c9e2203a1e6c6d3aa0202e95e07b9acdd9). sebelum Anda mencobanya sendiri.
 
@@ -751,7 +751,7 @@ Ayo kita latihan apa yang sudah kita pelajari!
 
 Silakan buat folder baru bernama events dan di dalamnya buat berkas JavaScript baru bernama **index.js**.
 
-![](img/29.png)
+![](.gitbook/assets/29.png)
 
 Tuliskan starter code berikut di dalam **index.js**:
 
@@ -784,7 +784,7 @@ node ./events/index.js
 
 Maka console akan menampilkan output seperti berikut:
 
-![](img/30.png)
+![](.gitbook/assets/30.png)
 
 > **Mengalami kesulitan dalam menyelesaikan latihan?** Cobalah untuk ulas kembali materi yang diberikan atau tanyakan kesulitan yang Anda alami pada [forum diskusi](https://www.dicoding.com/academies/261/discussions). Hindari melihat atau membandingkan [kode solusi pada latihan event](https://github.com/dicodingacademy/a261-backend-pemula-labs/blob/201-node-js-basic/node-js-basic/events/index.js). sebelum Anda mencobanya sendiri.
 
@@ -829,7 +829,7 @@ Pada latihan kali ini, Anda akan ditugaskan untuk membuat program JavaScript yan
 
 Silakan buat folder baru dengan nama filesystem. Di dalamnya buat dua berkas, yakni **index.js** dan **notes.txt**.
 
-![](img/31.png)
+![](.gitbook/assets/31.png)
 
 Di dalam masing-masing berkas, tuliskan kode/teks berikut:
 
@@ -857,7 +857,7 @@ node ./filesystem/index.js
 
 Bila TODO berhasil Anda kerjakan, maka outputnya tampak seperti ini
 
-![](img/32.png)
+![](.gitbook/assets/32.png)
 
 **Tips**: Anda bisa gunakan method
 
@@ -977,7 +977,7 @@ Kita akan kombinasikan kedua teknik tersebut untuk membuat program membaca teks 
 
 Silakan buat folder baru dengan nama **stream**. Di dalamnya buat dua berkas baru dengan nama **index.js** dan **input.txt**.
 
-![](img/33.png)
+![](.gitbook/assets/33.png)
 
 Di dalam masing-masing berkas, tuliskan kode/teks berikut:
 
@@ -1010,7 +1010,7 @@ node ./stream/index.js
 
 Setelah mengeksekusi berkas tersebut, maka akan tercipta berkas baru dengan nama **output.txt**
 
-![](img/34.png)
+![](.gitbook/assets/34.png)
 
 Yang berisikan teks berikut:
 
